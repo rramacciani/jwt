@@ -25,7 +25,7 @@ class PropertyList implements \JsonSerializable, \IteratorAggregate
     /**
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize():mixed
     {
         $properties = new \stdClass();
 
