@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Signature;
+namespace Rramacciani\Jwt\Signature;
 
 use Emarref\Jwt\Encoding\EncoderInterface;
 use Emarref\Jwt\Encryption\EncryptionInterface;

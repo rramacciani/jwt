@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Verification;
+namespace Rramacciani\Jwt\Verification;
 
 use Emarref\Jwt\Encoding;
 use Emarref\Jwt\Encryption;

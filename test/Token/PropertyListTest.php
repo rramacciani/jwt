@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Token;
+namespace Rramacciani\Jwt\Token;
 
 class PropertyListTest extends \PHPUnit_Framework_TestCase
 {

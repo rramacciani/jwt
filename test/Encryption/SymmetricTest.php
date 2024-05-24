@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Encryption;
+namespace Rramacciani\Jwt\Encryption;
 
 class SymmetricTest extends \PHPUnit_Framework_TestCase
 {

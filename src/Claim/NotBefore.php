@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Claim;
+namespace Rramacciani\Jwt\Claim;
 
 /**
  * "nbf" (Not Before) Claim

@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Algorithm;
+namespace Rramacciani\Jwt\Algorithm;
 
 class Rs512Test extends \PHPUnit_Framework_TestCase
 {

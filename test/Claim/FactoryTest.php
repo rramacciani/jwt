@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Claim;
+namespace Rramacciani\Jwt\Claim;
 
 class FactoryTest extends \PHPUnit_Framework_TestCase
 {

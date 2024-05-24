@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Encryption;
+namespace Rramacciani\Jwt\Encryption;
 
 use Emarref\Jwt\Algorithm\AlgorithmInterface;
 

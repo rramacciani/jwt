@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\HeaderParameter;
+namespace Rramacciani\Jwt\HeaderParameter;
 
 class AlgorithmTest extends \PHPUnit_Framework_TestCase
 {

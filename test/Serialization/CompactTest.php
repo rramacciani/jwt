@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Serialization;
+namespace Rramacciani\Jwt\Serialization;
 
 use Emarref\Jwt\Claim;
 use Emarref\Jwt\HeaderParameter;

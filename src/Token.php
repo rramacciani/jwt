@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt;
+namespace Rramacciani\Jwt;
 
 use Emarref\Jwt\Claim;
 use Emarref\Jwt\HeaderParameter;

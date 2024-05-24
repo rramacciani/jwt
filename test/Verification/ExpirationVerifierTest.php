@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Verification;
+namespace Rramacciani\Jwt\Verification;
 
 class ExpirationVerifierTest extends \PHPUnit_Framework_TestCase
 {
