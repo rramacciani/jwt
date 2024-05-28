@@ -1,5 +1,5 @@
 {
-    "name": "emarref/jwt",
+    "name": "rramacciani/jwt",
     "description": "A JWT implementation",
     "license": "MIT",
     "authors": [
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Emarref\\Jwt\\": "src/"
+            "Rramacciani\\Jwt\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Emarref\\Jwt\\": "test/"
+            "Rramacciani\\Jwt\\": "test/"
         }
     }
 }
