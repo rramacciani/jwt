@@ -1,6 +1,7 @@
+This PHP lib is forked from emarref/jwt, it's needed to work with PHP8
+
 An implementation of the [JSON Web Token (JWT)](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-30) draft in PHP. See [jwt.io](http://jwt.io/) for more information on JWT.
 
-[![Build Status](https://travis-ci.org/rramacciani/jwt.svg?branch=master)](https://travis-ci.org/rramacciani/jwt) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rramacciani/jwt/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rramacciani/jwt/?branch=master)
 
 Features include:
 
