@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Claim;
+namespace Emarref\Jwt\Claim;
 
 abstract class AbstractClaim implements ClaimInterface
 {

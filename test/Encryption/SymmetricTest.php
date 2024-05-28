@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Encryption;
+namespace Emarref\Jwt\Encryption;
 
 class SymmetricTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,7 +16,7 @@ class SymmetricTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->algorithm = $this->getMockBuilder('Rramacciani\Jwt\Algorithm\Hs256')
+        $this->algorithm = $this->getMockBuilder('Emarref\Jwt\Algorithm\Hs256')
             ->setConstructorArgs(['secret'])
             ->getMock();
 

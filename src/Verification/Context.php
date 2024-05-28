@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
-use Rramacciani\Jwt\Encryption\EncryptionInterface;
+use Emarref\Jwt\Encryption\EncryptionInterface;
 
 class Context
 {

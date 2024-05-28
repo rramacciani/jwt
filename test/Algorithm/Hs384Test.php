@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Algorithm;
+namespace Emarref\Jwt\Algorithm;
 
 class Hs384Test extends \PHPUnit_Framework_TestCase
 {

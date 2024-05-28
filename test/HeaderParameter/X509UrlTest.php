@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
 class X509UrlTest extends \PHPUnit_Framework_TestCase
 {

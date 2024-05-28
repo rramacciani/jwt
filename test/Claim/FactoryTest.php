@@ -1,18 +1,18 @@
 <?php
 
-namespace Rramacciani\Jwt\Claim;
+namespace Emarref\Jwt\Claim;
 
 class FactoryTest extends \PHPUnit_Framework_TestCase
 {
     private static $classMap = [
-        Audience::NAME   => 'Rramacciani\Jwt\Claim\Audience',
-        Expiration::NAME => 'Rramacciani\Jwt\Claim\Expiration',
-        IssuedAt::NAME   => 'Rramacciani\Jwt\Claim\IssuedAt',
-        Issuer::NAME     => 'Rramacciani\Jwt\Claim\Issuer',
-        JwtId::NAME      => 'Rramacciani\Jwt\Claim\JwtId',
-        NotBefore::NAME  => 'Rramacciani\Jwt\Claim\NotBefore',
-        Subject::NAME    => 'Rramacciani\Jwt\Claim\Subject',
-        'private'        => 'Rramacciani\Jwt\Claim\PrivateClaim',
+        Audience::NAME   => 'Emarref\Jwt\Claim\Audience',
+        Expiration::NAME => 'Emarref\Jwt\Claim\Expiration',
+        IssuedAt::NAME   => 'Emarref\Jwt\Claim\IssuedAt',
+        Issuer::NAME     => 'Emarref\Jwt\Claim\Issuer',
+        JwtId::NAME      => 'Emarref\Jwt\Claim\JwtId',
+        NotBefore::NAME  => 'Emarref\Jwt\Claim\NotBefore',
+        Subject::NAME    => 'Emarref\Jwt\Claim\Subject',
+        'private'        => 'Emarref\Jwt\Claim\PrivateClaim',
     ];
 
     /**

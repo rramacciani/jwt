@@ -1,10 +1,10 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
-use Rramacciani\Jwt\Claim;
-use Rramacciani\Jwt\Exception\InvalidSubjectException;
-use Rramacciani\Jwt\Token;
+use Emarref\Jwt\Claim;
+use Emarref\Jwt\Exception\InvalidSubjectException;
+use Emarref\Jwt\Token;
 
 class SubjectVerifier implements VerifierInterface
 {

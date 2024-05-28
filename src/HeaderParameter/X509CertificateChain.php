@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
 /**
  * "x5c" (X.509 Certificate Chain) Header Parameter

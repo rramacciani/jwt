@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Algorithm;
+namespace Emarref\Jwt\Algorithm;
 
 class Es512 extends EcdSa
 {

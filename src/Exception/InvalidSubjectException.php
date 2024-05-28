@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Exception;
+namespace Emarref\Jwt\Exception;
 
 class InvalidSubjectException extends VerificationException
 {

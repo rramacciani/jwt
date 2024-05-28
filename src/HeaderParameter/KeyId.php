@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
 /**
  * "kid" (Key ID) Header Parameter

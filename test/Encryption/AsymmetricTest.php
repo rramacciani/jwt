@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Encryption;
+namespace Emarref\Jwt\Encryption;
 
 class AsymmetricTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,7 +16,7 @@ class AsymmetricTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->algorithm = $this->getMockBuilder('Rramacciani\Jwt\Algorithm\Rs256')->getMock();
+        $this->algorithm = $this->getMockBuilder('Emarref\Jwt\Algorithm\Rs256')->getMock();
 
         $this->encryption = new Asymmetric($this->algorithm);
     }

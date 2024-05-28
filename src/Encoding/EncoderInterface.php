@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Encoding;
+namespace Emarref\Jwt\Encoding;
 
 interface EncoderInterface
 {

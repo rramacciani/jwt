@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Encryption;
+namespace Emarref\Jwt\Encryption;
 
 interface EncryptionInterface
 {

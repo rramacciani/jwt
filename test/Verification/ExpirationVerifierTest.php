@@ -1,16 +1,16 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
 class ExpirationVerifierTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token\Payload
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token\Payload
      */
     private $payload;
 
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token
      */
     private $token;
 
@@ -21,9 +21,9 @@ class ExpirationVerifierTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
+        $this->payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
 
-        $this->token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
+        $this->token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
 
         $this->token->expects($this->any())
             ->method('getPayload')
@@ -42,14 +42,14 @@ class ExpirationVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Rramacciani\Jwt\Exception\ExpiredException
+     * @expectedException \Emarref\Jwt\Exception\ExpiredException
      * @expectedExceptionMessage Token expired at "Sat, 08 Nov 2014 00:00:00 +0000"
      */
     public function testExpired()
     {
         $dateTime = new \DateTime('Sat, 08 Nov 2014 00:00:00 +0000');
 
-        $expirationClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Expiration')->getMock();
+        $expirationClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Expiration')->getMock();
 
         $expirationClaim->expects($this->exactly(3))
             ->method('getValue')
@@ -68,7 +68,7 @@ class ExpirationVerifierTest extends \PHPUnit_Framework_TestCase
      */
     public function testUnexpectedValue()
     {
-        $expirationClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Expiration')->getMock();
+        $expirationClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Expiration')->getMock();
 
         $expirationClaim->expects($this->exactly(3))
                         ->method('getValue')
@@ -85,7 +85,7 @@ class ExpirationVerifierTest extends \PHPUnit_Framework_TestCase
     {
         $future = new \DateTime('5 minutes', new \DateTimeZone('UTC'));
 
-        $expirationClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Expiration')->getMock();
+        $expirationClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Expiration')->getMock();
 
         $expirationClaim->expects($this->once())
             ->method('getValue')

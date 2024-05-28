@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Claim;
+namespace Emarref\Jwt\Claim;
 
 class PrivateClaimTest extends \PHPUnit_Framework_TestCase
 {

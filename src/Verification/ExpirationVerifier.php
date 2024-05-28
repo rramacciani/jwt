@@ -1,10 +1,10 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
-use Rramacciani\Jwt\Claim;
-use Rramacciani\Jwt\Exception\ExpiredException;
-use Rramacciani\Jwt\Token;
+use Emarref\Jwt\Claim;
+use Emarref\Jwt\Exception\ExpiredException;
+use Emarref\Jwt\Token;
 
 class ExpirationVerifier implements VerifierInterface
 {

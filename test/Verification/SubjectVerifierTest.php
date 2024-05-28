@@ -1,26 +1,26 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
-use Rramacciani\Jwt\Claim;
+use Emarref\Jwt\Claim;
 
 class SubjectVerifierTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token\Payload
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token\Payload
      */
     private $payload;
 
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token
      */
     private $token;
 
     public function setUp()
     {
-        $this->payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
+        $this->payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
 
-        $this->token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
+        $this->token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
     }
 
     /**
@@ -48,12 +48,12 @@ class SubjectVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Rramacciani\Jwt\Exception\InvalidSubjectException
+     * @expectedException \Emarref\Jwt\Exception\InvalidSubjectException
      * @expectedExceptionMessage Subject is invalid.
      */
     public function testSubjectInPayloadOnly()
     {
-        $subjectClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Subject')
+        $subjectClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Subject')
             ->getMock();
 
         $subjectClaim->expects($this->once())
@@ -74,7 +74,7 @@ class SubjectVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Rramacciani\Jwt\Exception\InvalidSubjectException
+     * @expectedException \Emarref\Jwt\Exception\InvalidSubjectException
      * @expectedExceptionMessage Subject is invalid.
      */
     public function testSubjectInContextOnly()
@@ -93,12 +93,12 @@ class SubjectVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Rramacciani\Jwt\Exception\InvalidSubjectException
+     * @expectedException \Emarref\Jwt\Exception\InvalidSubjectException
      * @expectedExceptionMessage Subject is invalid.
      */
     public function testSubjectMismatch()
     {
-        $subjectClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Subject')
+        $subjectClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Subject')
             ->getMock();
 
         $subjectClaim->expects($this->once())
@@ -120,7 +120,7 @@ class SubjectVerifierTest extends \PHPUnit_Framework_TestCase
 
     public function testSuccess()
     {
-        $subjectClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Subject')
+        $subjectClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Subject')
             ->getMock();
 
         $subjectClaim->expects($this->once())

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Algorithm;
+namespace Emarref\Jwt\Algorithm;
 
 abstract class Hmac implements SymmetricInterface
 {

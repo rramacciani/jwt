@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\Token;
+namespace Emarref\Jwt\Token;
 
 class PropertyList implements \JsonSerializable, \IteratorAggregate
 {
@@ -25,7 +25,7 @@ class PropertyList implements \JsonSerializable, \IteratorAggregate
     /**
      * @return string
      */
-    public function jsonSerialize():mixed
+    public function jsonSerialize()
     {
         $properties = new \stdClass();
 

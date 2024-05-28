@@ -1,16 +1,16 @@
 <?php
 
-namespace Rramacciani\Jwt;
+namespace Emarref\Jwt;
 
-use Rramacciani\Jwt\Algorithm;
-use Rramacciani\Jwt\Claim;
-use Rramacciani\Jwt\Encoding;
-use Rramacciani\Jwt\Encryption;
-use Rramacciani\Jwt\Exception;
-use Rramacciani\Jwt\HeaderParameter;
-use Rramacciani\Jwt\Serialization;
-use Rramacciani\Jwt\Signature;
-use Rramacciani\Jwt\Verification;
+use Emarref\Jwt\Algorithm;
+use Emarref\Jwt\Claim;
+use Emarref\Jwt\Encoding;
+use Emarref\Jwt\Encryption;
+use Emarref\Jwt\Exception;
+use Emarref\Jwt\HeaderParameter;
+use Emarref\Jwt\Serialization;
+use Emarref\Jwt\Signature;
+use Emarref\Jwt\Verification;
 
 class Jwt
 {

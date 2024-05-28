@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt;
+namespace Emarref\Jwt;
 
 trait FactoryTrait
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
-use Rramacciani\Jwt\Token\PropertyInterface;
+use Emarref\Jwt\Token\PropertyInterface;
 
 interface ParameterInterface extends PropertyInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Rramacciani\Jwt\Token;
+namespace Emarref\Jwt\Token;
 
-use Rramacciani\Jwt\HeaderParameter;
-use Rramacciani\Jwt\Claim;
+use Emarref\Jwt\HeaderParameter;
+use Emarref\Jwt\Claim;
 
 class Header implements \JsonSerializable
 {
@@ -65,7 +65,7 @@ class Header implements \JsonSerializable
     /**
      * @return string
      */
-    public function jsonSerialize():mixed
+    public function jsonSerialize()
     {
         return $this->propertyList->jsonSerialize();
     }

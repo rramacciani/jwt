@@ -1,10 +1,10 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
-use Rramacciani\Jwt\Claim;
-use Rramacciani\Jwt\Exception\InvalidIssuerException;
-use Rramacciani\Jwt\Token;
+use Emarref\Jwt\Claim;
+use Emarref\Jwt\Exception\InvalidIssuerException;
+use Emarref\Jwt\Token;
 
 class IssuerVerifier implements VerifierInterface
 {

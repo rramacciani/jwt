@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\Encryption;
+namespace Emarref\Jwt\Encryption;
 
-use Rramacciani\Jwt\Algorithm;
+use Emarref\Jwt\Algorithm;
 
 /**
  * @property Algorithm\SymmetricInterface $algorithm

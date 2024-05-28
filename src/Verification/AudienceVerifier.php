@@ -1,10 +1,10 @@
 <?php
 
-namespace Rramacciani\Jwt\Verification;
+namespace Emarref\Jwt\Verification;
 
-use Rramacciani\Jwt\Claim;
-use Rramacciani\Jwt\Exception\InvalidAudienceException;
-use Rramacciani\Jwt\Token;
+use Emarref\Jwt\Claim;
+use Emarref\Jwt\Exception\InvalidAudienceException;
+use Emarref\Jwt\Token;
 
 class AudienceVerifier implements VerifierInterface
 {

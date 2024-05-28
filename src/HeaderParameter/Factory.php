@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
-use Rramacciani\Jwt\FactoryTrait;
+use Emarref\Jwt\FactoryTrait;
 
 /**
  * @method ParameterInterface get(string $name)
@@ -14,23 +14,23 @@ class Factory
     /**
      * @var string
      */
-    private static $customParameterClass = 'Rramacciani\Jwt\HeaderParameter\Custom';
+    private static $customParameterClass = 'Emarref\Jwt\HeaderParameter\Custom';
 
     /**
      * @var array
      */
     private static $classMap = [
-        Algorithm::NAME                       => 'Rramacciani\Jwt\HeaderParameter\Algorithm',
-        ContentType::NAME                     => 'Rramacciani\Jwt\HeaderParameter\ContentType',
-        Critical::NAME                        => 'Rramacciani\Jwt\HeaderParameter\Critical',
-        JsonWebKey::NAME                      => 'Rramacciani\Jwt\HeaderParameter\JsonWebKey',
-        JwkSetUrl::NAME                       => 'Rramacciani\Jwt\HeaderParameter\JwkSetUrl',
-        KeyId::NAME                           => 'Rramacciani\Jwt\HeaderParameter\KeyId',
-        Type::NAME                            => 'Rramacciani\Jwt\HeaderParameter\Type',
-        X509CertificateChain::NAME            => 'Rramacciani\Jwt\HeaderParameter\X509CertificateChain',
-        X509CertificateSha1Thumbprint::NAME   => 'Rramacciani\Jwt\HeaderParameter\X509CertificateSha1Thumbprint',
-        X509CertificateSha256Thumbprint::NAME => 'Rramacciani\Jwt\HeaderParameter\X509CertificateSha256Thumbprint',
-        X509Url::NAME                         => 'Rramacciani\Jwt\HeaderParameter\X509Url',
+        Algorithm::NAME                       => 'Emarref\Jwt\HeaderParameter\Algorithm',
+        ContentType::NAME                     => 'Emarref\Jwt\HeaderParameter\ContentType',
+        Critical::NAME                        => 'Emarref\Jwt\HeaderParameter\Critical',
+        JsonWebKey::NAME                      => 'Emarref\Jwt\HeaderParameter\JsonWebKey',
+        JwkSetUrl::NAME                       => 'Emarref\Jwt\HeaderParameter\JwkSetUrl',
+        KeyId::NAME                           => 'Emarref\Jwt\HeaderParameter\KeyId',
+        Type::NAME                            => 'Emarref\Jwt\HeaderParameter\Type',
+        X509CertificateChain::NAME            => 'Emarref\Jwt\HeaderParameter\X509CertificateChain',
+        X509CertificateSha1Thumbprint::NAME   => 'Emarref\Jwt\HeaderParameter\X509CertificateSha1Thumbprint',
+        X509CertificateSha256Thumbprint::NAME => 'Emarref\Jwt\HeaderParameter\X509CertificateSha256Thumbprint',
+        X509Url::NAME                         => 'Emarref\Jwt\HeaderParameter\X509Url',
     ];
 
     /**

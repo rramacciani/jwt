@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\Token;
+namespace Emarref\Jwt\Token;
 
-use Rramacciani\Jwt\Claim;
+use Emarref\Jwt\Claim;
 
 class PayloadTest extends \PHPUnit_Framework_TestCase
 {
@@ -18,7 +18,7 @@ class PayloadTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->claims  = $this->getMockBuilder('Rramacciani\Jwt\Token\PropertyList')->getMock();
+        $this->claims  = $this->getMockBuilder('Emarref\Jwt\Token\PropertyList')->getMock();
         $this->payload = new PayloadStub($this->claims);
     }
 

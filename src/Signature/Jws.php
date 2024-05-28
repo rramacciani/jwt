@@ -1,11 +1,11 @@
 <?php
 
-namespace Rramacciani\Jwt\Signature;
+namespace Emarref\Jwt\Signature;
 
-use Rramacciani\Jwt\Encoding\EncoderInterface;
-use Rramacciani\Jwt\Encryption\EncryptionInterface;
-use Rramacciani\Jwt\HeaderParameter\Algorithm;
-use Rramacciani\Jwt\Token;
+use Emarref\Jwt\Encoding\EncoderInterface;
+use Emarref\Jwt\Encryption\EncryptionInterface;
+use Emarref\Jwt\HeaderParameter\Algorithm;
+use Emarref\Jwt\Token;
 
 class Jws implements SignerInterface
 {

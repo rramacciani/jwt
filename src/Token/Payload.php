@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\Token;
+namespace Emarref\Jwt\Token;
 
-use Rramacciani\Jwt\Claim;
+use Emarref\Jwt\Claim;
 
 class Payload implements \JsonSerializable
 {
@@ -51,7 +51,7 @@ class Payload implements \JsonSerializable
     /**
      * @return string
      */
-    public function jsonSerialize():mixed
+    public function jsonSerialize()
     {
         return $this->propertyList->jsonSerialize();
     }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\Signature;
+namespace Emarref\Jwt\Signature;
 
-use Rramacciani\Jwt\Token;
+use Emarref\Jwt\Token;
 
 interface SignerInterface
 {

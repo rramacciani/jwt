@@ -1,6 +1,6 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
 class JwkSetUrlTest extends \PHPUnit_Framework_TestCase
 {

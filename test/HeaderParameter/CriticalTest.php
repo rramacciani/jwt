@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\HeaderParameter;
+namespace Emarref\Jwt\HeaderParameter;
 
-use Rramacciani\Jwt\Claim;
+use Emarref\Jwt\Claim;
 
 class CriticalTest extends \PHPUnit_Framework_TestCase
 {

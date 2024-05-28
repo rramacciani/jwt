@@ -1,8 +1,8 @@
 <?php
 
-namespace Rramacciani\Jwt\Encryption;
+namespace Emarref\Jwt\Encryption;
 
-use Rramacciani\Jwt\Algorithm\AlgorithmInterface;
+use Emarref\Jwt\Algorithm\AlgorithmInterface;
 
 class UnknownAlgorithmStub implements AlgorithmInterface
 {
