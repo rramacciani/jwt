@@ -1,18 +1,18 @@
 <?php
 
-namespace Emarref\Jwt\Verification;
+namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Claim\NotBefore;
+use Rramacciani\Jwt\Claim\NotBefore;
 
 class NotBeforeVerifierTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token\Payload
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token\Payload
      */
     private $payload;
 
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token
      */
     private $token;
 
@@ -23,9 +23,9 @@ class NotBeforeVerifierTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
+        $this->payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
 
-        $this->token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
+        $this->token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
 
         $this->token->expects($this->any())
             ->method('getPayload')
@@ -45,14 +45,14 @@ class NotBeforeVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Emarref\Jwt\Exception\TooEarlyException
+     * @expectedException \Rramacciani\Jwt\Exception\TooEarlyException
      * @expectedExceptionMessageRegExp /Token must not be processed before "[\w,:+\d ]+"/
      */
     public function testNotBefore()
     {
         $dateTime = new \DateTime('1 day');
 
-        $notBeforeClaim = $this->getMockBuilder('Emarref\Jwt\Claim\NotBefore')->getMock();
+        $notBeforeClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\NotBefore')->getMock();
 
         $notBeforeClaim->expects($this->exactly(3))
             ->method('getValue')
@@ -72,7 +72,7 @@ class NotBeforeVerifierTest extends \PHPUnit_Framework_TestCase
      */
     public function testUnexpectedValue()
     {
-        $notBeforeClaim = $this->getMockBuilder('Emarref\Jwt\Claim\NotBefore')->getMock();
+        $notBeforeClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\NotBefore')->getMock();
 
         $notBeforeClaim->expects($this->exactly(2))
                         ->method('getValue')
@@ -90,7 +90,7 @@ class NotBeforeVerifierTest extends \PHPUnit_Framework_TestCase
     {
         $past = new \DateTime('5 minutes ago', new \DateTimeZone('UTC'));
 
-        $notBeforeClaim = $this->getMockBuilder('Emarref\Jwt\Claim\NotBefore')->getMock();
+        $notBeforeClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\NotBefore')->getMock();
 
         $notBeforeClaim->expects($this->exactly(2))
             ->method('getValue')

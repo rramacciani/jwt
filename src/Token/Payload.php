@@ -1,8 +1,8 @@
 <?php
 
-namespace Emarref\Jwt\Token;
+namespace Rramacciani\Jwt\Token;
 
-use Emarref\Jwt\Claim;
+use Rramacciani\Jwt\Claim;
 
 class Payload implements \JsonSerializable
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Claim;
+namespace Rramacciani\Jwt\Claim;
 
 class NotBeforeTest extends \PHPUnit_Framework_TestCase
 {

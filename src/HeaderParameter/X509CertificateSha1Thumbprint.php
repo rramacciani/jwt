@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\HeaderParameter;
+namespace Rramacciani\Jwt\HeaderParameter;
 
 /**
  * "x5t" (X.509 Certificate SHA-1 Thumbprint) Header Parameter

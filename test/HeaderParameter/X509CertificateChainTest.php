@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\HeaderParameter;
+namespace Rramacciani\Jwt\HeaderParameter;
 
 class X509CertificateChainTest extends \PHPUnit_Framework_TestCase
 {

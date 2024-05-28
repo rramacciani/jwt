@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\HeaderParameter;
+namespace Rramacciani\Jwt\HeaderParameter;
 
 /**
  * "typ" (Type) Header Parameter

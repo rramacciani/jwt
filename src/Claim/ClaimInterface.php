@@ -1,8 +1,8 @@
 <?php
 
-namespace Emarref\Jwt\Claim;
+namespace Rramacciani\Jwt\Claim;
 
-use Emarref\Jwt\Token\PropertyInterface;
+use Rramacciani\Jwt\Token\PropertyInterface;
 
 interface ClaimInterface extends PropertyInterface
 {

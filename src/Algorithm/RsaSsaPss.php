@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Algorithm;
+namespace Rramacciani\Jwt\Algorithm;
 
 abstract class RsaSsaPss implements AsymmetricInterface
 {

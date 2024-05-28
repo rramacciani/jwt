@@ -1,26 +1,26 @@
 <?php
 
-namespace Emarref\Jwt\Verification;
+namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Claim;
+use Rramacciani\Jwt\Claim;
 
 class IssuerVerifierTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token\Payload
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token\Payload
      */
     private $payload;
 
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token
      */
     private $token;
 
     public function setUp()
     {
-        $this->payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
+        $this->payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
 
-        $this->token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
+        $this->token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
     }
 
     /**
@@ -48,12 +48,12 @@ class IssuerVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Emarref\Jwt\Exception\InvalidIssuerException
+     * @expectedException \Rramacciani\Jwt\Exception\InvalidIssuerException
      * @expectedExceptionMessage Issuer is invalid.
      */
     public function testIssuerInPayloadOnly()
     {
-        $issuerClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Issuer')
+        $issuerClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Issuer')
             ->getMock();
 
         $issuerClaim->expects($this->once())
@@ -74,7 +74,7 @@ class IssuerVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Emarref\Jwt\Exception\InvalidIssuerException
+     * @expectedException \Rramacciani\Jwt\Exception\InvalidIssuerException
      * @expectedExceptionMessage Issuer is invalid.
      */
     public function testIssuerInContextOnly()
@@ -93,12 +93,12 @@ class IssuerVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Emarref\Jwt\Exception\InvalidIssuerException
+     * @expectedException \Rramacciani\Jwt\Exception\InvalidIssuerException
      * @expectedExceptionMessage Issuer is invalid.
      */
     public function testIssuerMismatch()
     {
-        $issuerClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Issuer')
+        $issuerClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Issuer')
             ->getMock();
 
         $issuerClaim->expects($this->once())
@@ -120,7 +120,7 @@ class IssuerVerifierTest extends \PHPUnit_Framework_TestCase
 
     public function testSuccess()
     {
-        $issuerClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Issuer')
+        $issuerClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Issuer')
             ->getMock();
 
         $issuerClaim->expects($this->once())

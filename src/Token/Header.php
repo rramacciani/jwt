@@ -1,9 +1,9 @@
 <?php
 
-namespace Emarref\Jwt\Token;
+namespace Rramacciani\Jwt\Token;
 
-use Emarref\Jwt\HeaderParameter;
-use Emarref\Jwt\Claim;
+use Rramacciani\Jwt\HeaderParameter;
+use Rramacciani\Jwt\Claim;
 
 class Header implements \JsonSerializable
 {
