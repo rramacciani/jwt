@@ -1,8 +1,8 @@
 <?php
 
-namespace Emarref\Jwt\Verification;
+namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Token;
 
 interface VerifierInterface
 {

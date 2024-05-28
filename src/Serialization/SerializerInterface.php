@@ -1,8 +1,8 @@
 <?php
 
-namespace Emarref\Jwt\Serialization;
+namespace Rramacciani\Jwt\Serialization;
 
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Token;
 
 interface SerializerInterface
 {

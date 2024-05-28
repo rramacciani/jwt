@@ -1,10 +1,10 @@
 <?php
 
-namespace Emarref\Jwt\Verification;
+namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Encoding;
-use Emarref\Jwt\Encryption;
-use Emarref\Jwt\Signature\SignerInterface;
+use Rramacciani\Jwt\Encoding;
+use Rramacciani\Jwt\Encryption;
+use Rramacciani\Jwt\Signature\SignerInterface;
 
 class EncryptionVerifierStub extends EncryptionVerifier
 {

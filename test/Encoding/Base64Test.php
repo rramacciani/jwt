@@ -1,6 +1,6 @@
 <?php
 
-namespace Emarref\Jwt\Encoding;
+namespace Rramacciani\Jwt\Encoding;
 
 class Base64Test extends \PHPUnit_Framework_TestCase
 {
