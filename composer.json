@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rramacciani\\Jwt\\": "src/"
+            "rramacciani\\Jwt\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rramacciani\\Jwt\\": "test/"
+            "rramacciani\\Jwt\\": "test/"
         }
     }
 }
