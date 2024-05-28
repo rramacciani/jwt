@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\HeaderParameter;
 
-use Emarref\Jwt\Token\PropertyInterface;
+use Rramacciani\Jwt\Token\PropertyInterface;
 
 interface ParameterInterface extends PropertyInterface
 {

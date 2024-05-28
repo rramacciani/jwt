@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\Token;
 
-use Emarref\Jwt\HeaderParameter;
+use Rramacciani\Jwt\HeaderParameter;
 
 class HeaderTest extends \PHPUnit_Framework_TestCase
 {
@@ -18,7 +18,7 @@ class HeaderTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->parameters = $this->getMockBuilder('Emarref\Jwt\Token\PropertyList')->getMock();
+        $this->parameters = $this->getMockBuilder('Rramacciani\Jwt\Token\PropertyList')->getMock();
         $this->header     = new HeaderStub($this->parameters);
     }
 

@@ -2,9 +2,9 @@
 
 namespace Rramacciani\Jwt\Serialization;
 
-use Emarref\Jwt\Claim;
-use Emarref\Jwt\HeaderParameter;
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Claim;
+use Rramacciani\Jwt\HeaderParameter;
+use Rramacciani\Jwt\Token;
 
 class CompactTest extends \PHPUnit_Framework_TestCase
 {
@@ -30,11 +30,11 @@ class CompactTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->encoding = $this->getMockBuilder('Emarref\Jwt\Encoding\Base64')->getMock();
+        $this->encoding = $this->getMockBuilder('Rramacciani\Jwt\Encoding\Base64')->getMock();
 
-        $this->headerParameterFactory = $this->getMockBuilder('Emarref\Jwt\HeaderParameter\Factory')->getMock();
+        $this->headerParameterFactory = $this->getMockBuilder('Rramacciani\Jwt\HeaderParameter\Factory')->getMock();
 
-        $this->claimFactory = $this->getMockBuilder('Emarref\Jwt\Claim\Factory')->getMock();
+        $this->claimFactory = $this->getMockBuilder('Rramacciani\Jwt\Claim\Factory')->getMock();
 
         $this->serializer = new Compact($this->encoding, $this->headerParameterFactory, $this->claimFactory);
     }
@@ -62,7 +62,7 @@ class CompactTest extends \PHPUnit_Framework_TestCase
 
         // Configure headers
 
-        $headerParameter = $this->getMockBuilder('Emarref\Jwt\HeaderParameter\Custom')
+        $headerParameter = $this->getMockBuilder('Rramacciani\Jwt\HeaderParameter\Custom')
             ->getMock();
 
         $headerParameter->expects($this->once())
@@ -84,7 +84,7 @@ class CompactTest extends \PHPUnit_Framework_TestCase
 
         // Configure claims
 
-        $claim = $this->getMockBuilder('Emarref\Jwt\Claim\PrivateClaim')
+        $claim = $this->getMockBuilder('Rramacciani\Jwt\Claim\PrivateClaim')
             ->getMock();
 
         $claim->expects($this->once())
@@ -161,7 +161,7 @@ class CompactTest extends \PHPUnit_Framework_TestCase
             ->with('signature')
             ->will($this->returnValue('{"signature_field":"valid_signature"}'));
 
-        $headerParameter = $this->getMockBuilder('Emarref\Jwt\HeaderParameter\Custom')
+        $headerParameter = $this->getMockBuilder('Rramacciani\Jwt\HeaderParameter\Custom')
             ->getMock();
 
         $this->headerParameterFactory->expects($this->once())
@@ -190,7 +190,7 @@ class CompactTest extends \PHPUnit_Framework_TestCase
             ->with(null)
             ->will($this->returnValue(null));
 
-        $headerParameter = $this->getMockBuilder('Emarref\Jwt\HeaderParameter\Custom')
+        $headerParameter = $this->getMockBuilder('Rramacciani\Jwt\HeaderParameter\Custom')
             ->getMock();
 
         $this->headerParameterFactory->expects($this->once())
@@ -207,13 +207,13 @@ class CompactTest extends \PHPUnit_Framework_TestCase
     {
         // Configure payload
 
-        $headerParameters = $this->getMockBuilder('Emarref\Jwt\Token\PropertyList')->getMock();
+        $headerParameters = $this->getMockBuilder('Rramacciani\Jwt\Token\PropertyList')->getMock();
 
         $headerParameters->expects($this->once())
             ->method('jsonSerialize')
             ->will($this->returnValue('{"a":"1"}'));
 
-        $header = $this->getMockBuilder('Emarref\Jwt\Token\Header')->getMock();
+        $header = $this->getMockBuilder('Rramacciani\Jwt\Token\Header')->getMock();
 
         $header->expects($this->once())
             ->method('getParameters')
@@ -221,13 +221,13 @@ class CompactTest extends \PHPUnit_Framework_TestCase
 
         // Configure payload
 
-        $claims = $this->getMockBuilder('Emarref\Jwt\Token\PropertyList')->getMock();
+        $claims = $this->getMockBuilder('Rramacciani\Jwt\Token\PropertyList')->getMock();
 
         $claims->expects($this->once())
             ->method('jsonSerialize')
             ->will($this->returnValue('{"b":"2"}'));
 
-        $payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
+        $payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
 
         $payload->expects($this->once())
             ->method('getClaims')
@@ -235,7 +235,7 @@ class CompactTest extends \PHPUnit_Framework_TestCase
 
         // Configure token
 
-        $token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
+        $token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
 
         $token->expects($this->once())
             ->method('getHeader')

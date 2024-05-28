@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Encryption\EncryptionInterface;
+use Rramacciani\Jwt\Encryption\EncryptionInterface;
 
 class Context
 {

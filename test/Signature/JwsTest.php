@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\Signature;
 
-use Emarref\Jwt\HeaderParameter\Algorithm;
+use Rramacciani\Jwt\HeaderParameter\Algorithm;
 
 class JwsTest extends \PHPUnit_Framework_TestCase
 {
@@ -28,13 +28,13 @@ class JwsTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->algorithm = $this->getMockBuilder('Emarref\Jwt\Algorithm\None')->getMock();
+        $this->algorithm = $this->getMockBuilder('Rramacciani\Jwt\Algorithm\None')->getMock();
 
-        $this->encryption = $this->getMockBuilder('Emarref\Jwt\Encryption\Symmetric')
+        $this->encryption = $this->getMockBuilder('Rramacciani\Jwt\Encryption\Symmetric')
             ->setConstructorArgs([$this->algorithm])
             ->getMock();
 
-        $this->encoder = $this->getMockBuilder('Emarref\Jwt\Encoding\Base64')->getMock();
+        $this->encoder = $this->getMockBuilder('Rramacciani\Jwt\Encoding\Base64')->getMock();
 
         $this->signer = new Jws($this->encryption, $this->encoder);
     }
@@ -45,7 +45,7 @@ class JwsTest extends \PHPUnit_Framework_TestCase
 
         // Configure payload
 
-        $headerParameters = $this->getMockBuilder('Emarref\Jwt\Token\PropertyList')->getMock();
+        $headerParameters = $this->getMockBuilder('Rramacciani\Jwt\Token\PropertyList')->getMock();
 
         $headerParameters->expects($this->once())
             ->method('jsonSerialize');
@@ -53,7 +53,7 @@ class JwsTest extends \PHPUnit_Framework_TestCase
         $this->encoder->expects($this->at(0))
             ->method('encode');
 
-        $header = $this->getMockBuilder('Emarref\Jwt\Token\Header')->getMock();
+        $header = $this->getMockBuilder('Rramacciani\Jwt\Token\Header')->getMock();
 
         $header->expects($this->once())
             ->method('getParameters')
@@ -61,12 +61,12 @@ class JwsTest extends \PHPUnit_Framework_TestCase
 
         // Configure payload
 
-        $claims = $this->getMockBuilder('Emarref\Jwt\Token\PropertyList')->getMock();
+        $claims = $this->getMockBuilder('Rramacciani\Jwt\Token\PropertyList')->getMock();
 
         $claims->expects($this->once())
             ->method('jsonSerialize');
 
-        $payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
+        $payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
 
         $payload->expects($this->once())
             ->method('getClaims')
@@ -77,7 +77,7 @@ class JwsTest extends \PHPUnit_Framework_TestCase
 
         // Configure token
 
-        $token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
+        $token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
 
         $token->expects($this->once())
               ->method('getHeader')

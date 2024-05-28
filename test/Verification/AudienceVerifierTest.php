@@ -2,25 +2,25 @@
 
 namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Claim;
+use Rramacciani\Jwt\Claim;
 
 class AudienceVerifierTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token\Payload
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token\Payload
      */
     private $payload;
 
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|\Emarref\Jwt\Token
+     * @var \PHPUnit_Framework_MockObject_MockObject|\Rramacciani\Jwt\Token
      */
     private $token;
 
     public function setUp()
     {
-        $this->payload = $this->getMockBuilder('Emarref\Jwt\Token\Payload')->getMock();
+        $this->payload = $this->getMockBuilder('Rramacciani\Jwt\Token\Payload')->getMock();
 
-        $this->token = $this->getMockBuilder('Emarref\Jwt\Token')->getMock();
+        $this->token = $this->getMockBuilder('Rramacciani\Jwt\Token')->getMock();
     }
 
     /**
@@ -48,14 +48,14 @@ class AudienceVerifierTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Emarref\Jwt\Exception\InvalidAudienceException
+     * @expectedException \Rramacciani\Jwt\Exception\InvalidAudienceException
      * @expectedExceptionMessage Audience is invalid.
      */
     public function testInvalidAudienceInToken()
     {
         $expectedAudience = 'urn://myaudience';
 
-        $audienceClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Audience')->getMock();
+        $audienceClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Audience')->getMock();
 
         $audienceClaim->expects($this->once())
             ->method('getValue')
@@ -76,7 +76,7 @@ class AudienceVerifierTest extends \PHPUnit_Framework_TestCase
 
     public function testArrayAudience()
     {
-        $audienceClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Audience')->getMock();
+        $audienceClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Audience')->getMock();
 
         $audienceClaim->expects($this->once())
                       ->method('getValue')
@@ -97,7 +97,7 @@ class AudienceVerifierTest extends \PHPUnit_Framework_TestCase
 
     public function testStringAudience()
     {
-        $audienceClaim = $this->getMockBuilder('Emarref\Jwt\Claim\Audience')->getMock();
+        $audienceClaim = $this->getMockBuilder('Rramacciani\Jwt\Claim\Audience')->getMock();
 
         $audienceClaim->expects($this->once())
                       ->method('getValue')

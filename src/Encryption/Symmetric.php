@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\Encryption;
 
-use Emarref\Jwt\Algorithm;
+use Rramacciani\Jwt\Algorithm;
 
 /**
  * @property Algorithm\SymmetricInterface $algorithm

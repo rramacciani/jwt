@@ -2,12 +2,12 @@
 
 namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Encoding;
-use Emarref\Jwt\Encryption;
-use Emarref\Jwt\Exception\InvalidSignatureException;
-use Emarref\Jwt\HeaderParameter;
-use Emarref\Jwt\Signature;
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Encoding;
+use Rramacciani\Jwt\Encryption;
+use Rramacciani\Jwt\Exception\InvalidSignatureException;
+use Rramacciani\Jwt\HeaderParameter;
+use Rramacciani\Jwt\Signature;
+use Rramacciani\Jwt\Token;
 
 class EncryptionVerifier implements VerifierInterface
 {

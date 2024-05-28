@@ -2,10 +2,10 @@
 
 namespace Rramacciani\Jwt\Serialization;
 
-use Emarref\Jwt\Claim;
-use Emarref\Jwt\Encoding;
-use Emarref\Jwt\HeaderParameter;
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Claim;
+use Rramacciani\Jwt\Encoding;
+use Rramacciani\Jwt\HeaderParameter;
+use Rramacciani\Jwt\Token;
 
 class Compact implements SerializerInterface
 {

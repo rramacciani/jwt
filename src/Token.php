@@ -2,10 +2,10 @@
 
 namespace Rramacciani\Jwt;
 
-use Emarref\Jwt\Claim;
-use Emarref\Jwt\HeaderParameter;
-use Emarref\Jwt\Token\Header;
-use Emarref\Jwt\Token\Payload;
+use Rramacciani\Jwt\Claim;
+use Rramacciani\Jwt\HeaderParameter;
+use Rramacciani\Jwt\Token\Header;
+use Rramacciani\Jwt\Token\Payload;
 
 class Token
 {

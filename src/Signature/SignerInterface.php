@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\Signature;
 
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Token;
 
 interface SignerInterface
 {

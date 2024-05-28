@@ -2,10 +2,10 @@
 
 namespace Rramacciani\Jwt\Signature;
 
-use Emarref\Jwt\Encoding\EncoderInterface;
-use Emarref\Jwt\Encryption\EncryptionInterface;
-use Emarref\Jwt\HeaderParameter\Algorithm;
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Encoding\EncoderInterface;
+use Rramacciani\Jwt\Encryption\EncryptionInterface;
+use Rramacciani\Jwt\HeaderParameter\Algorithm;
+use Rramacciani\Jwt\Token;
 
 class Jws implements SignerInterface
 {

@@ -2,9 +2,9 @@
 
 namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Claim;
-use Emarref\Jwt\Exception\ExpiredException;
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Claim;
+use Rramacciani\Jwt\Exception\ExpiredException;
+use Rramacciani\Jwt\Token;
 
 class ExpirationVerifier implements VerifierInterface
 {

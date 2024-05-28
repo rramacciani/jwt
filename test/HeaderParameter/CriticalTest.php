@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\HeaderParameter;
 
-use Emarref\Jwt\Claim;
+use Rramacciani\Jwt\Claim;
 
 class CriticalTest extends \PHPUnit_Framework_TestCase
 {

@@ -2,9 +2,9 @@
 
 namespace Rramacciani\Jwt\Verification;
 
-use Emarref\Jwt\Claim;
-use Emarref\Jwt\Exception\InvalidAudienceException;
-use Emarref\Jwt\Token;
+use Rramacciani\Jwt\Claim;
+use Rramacciani\Jwt\Exception\InvalidAudienceException;
+use Rramacciani\Jwt\Token;
 
 class AudienceVerifier implements VerifierInterface
 {

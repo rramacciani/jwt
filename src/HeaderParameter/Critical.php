@@ -2,7 +2,7 @@
 
 namespace Rramacciani\Jwt\HeaderParameter;
 
-use Emarref\Jwt\Claim;
+use Rramacciani\Jwt\Claim;
 
 /**
  * "crit" (Critical) Header Parameter
