@@ -25,7 +25,7 @@ class PropertyList implements \JsonSerializable, \IteratorAggregate
     /**
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize():mixed
     {
         $properties = new \stdClass();
 
@@ -46,7 +46,7 @@ class PropertyList implements \JsonSerializable, \IteratorAggregate
     /**
      * @return PropertyInterface[]
      */
-    public function getIterator()
+    public function getIterator() \Traversable
     {
         return $this->properties;
     }
